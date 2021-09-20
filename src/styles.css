@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: "Monserrat";
+}
+
+:root{
+  --main-green:#CBD962;
+
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("assets/fonts/Montserrat-Regular.ttf");
+}
+
+@keyframes expandNavbar {
+  from{
+    height: 0px;
+  }
+
+  to{
+    height: auto;
+  }
+
+}

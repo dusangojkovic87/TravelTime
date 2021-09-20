@@ -1,0 +1,23 @@
+<div class="navbar-container">
+  <img class="logo" src="/assets/icons/navbar/logo.png" alt="logo.png" />
+  <div class="navbar-link-wrrapper">
+    <ul>
+      <li>Home</li>
+      <li>About us</li>
+      <li>Service</li>
+      <li>Tour list</li>
+      <li>Contact us</li>
+      <li class="search-wrrapper"><span class="icon-search"></span></li>
+      <span (click)="toggleNavbar()" class="icon-bars"></span>
+    </ul>
+  </div>
+</div>
+<div [ngClass]="openNavbar ? 'opened--mobile--navbar' : 'closed--mobile--navbar'">
+    <ul class="mobile-ul">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Service</li>
+      <li>Tour list</li>
+      <li>Contact us</li>
+    </ul>
+</div>
