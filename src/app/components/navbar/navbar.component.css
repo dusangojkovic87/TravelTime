@@ -67,16 +67,11 @@ ul li:hover{
 }
 
 .closed--mobile--navbar{
-  height: 0px;
-  transition: 500ms ease-in-out;
+  display: none;
 }
 
 .opened--mobile--navbar{
-  transition: 500ms ease-in-out;
-  height: 300px;
-  width: 100%;
-  padding-bottom: 1rem;
-  display: none;
+ display: none;
 
 }
 
@@ -106,8 +101,18 @@ ul li:hover{
   }
 
   .opened--mobile--navbar{
+    transition: 500ms ease-in-out;
+    height: 300px;
+    width: 100%;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
+  }
+
+  .closed--mobile--navbar{
+    height: 0px;
+    transition: 500ms ease-in-out;
+    display: flex;
   }
 
 

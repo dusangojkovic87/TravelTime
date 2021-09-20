@@ -7,12 +7,21 @@ html,body{
 
 :root{
   --main-green:#CBD962;
+  --green-overlay:rgba(203, 217, 98, 0.1);
+  --main-yellow:#FFCE3E;
+  --main-grey:#404040;
+
 
 }
 
 @font-face {
   font-family: "Monserrat";
   src: url("assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("assets/fonts/PermanentMarker-Regular.ttf");
 }
 
 @keyframes expandNavbar {
