@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeVideoComponent } from './components/home-video/home-video.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TourCardListComponent } from './components/tour-card-list/tour-card-list.component';
+import { AboutUsCardComponent } from './components/about-us-card/about-us-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TourCardListComponent } from './components/tour-card-list/tour-card-lis
     NavbarComponent,
     HomeVideoComponent,
     HomeComponent,
-    TourCardListComponent
+    TourCardListComponent,
+    AboutUsCardComponent
   ],
   imports: [
     BrowserModule,

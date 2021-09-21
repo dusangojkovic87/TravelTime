@@ -1,0 +1,169 @@
+.about-us-container{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+}
+
+.about-us-wrrapper{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-details{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-wrrapper{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  transform: rotate(-3deg);
+}
+
+.img-wrrapper img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 7px solid var(--light-grey);
+  border-radius: 5px;
+}
+
+.heading-wrrapper{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: baseline;
+}
+
+h6{
+  position: relative;
+  margin-bottom: 0;
+  font-size:1.2rem;
+  color: var(--main-orange);
+  justify-self: baseline;
+
+}
+
+h1{
+  position: relative;
+  font-size:2rem;
+  font-weight: bold;
+  justify-self: baseline;
+}
+
+.travel-counter-card-wrrapper{
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.counter-card{
+  position: relative;
+  width: 45%;
+  background-color: var(--main-orange);
+  height:80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.icon-store{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/about-us-card/store.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.icon-globe{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/about-us-card/globe.svg");
+  background-repeat: no-repeat;
+  display: block;
+
+}
+
+.counter-wrrapper{
+  position: relative;
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.counter__text{
+  margin: 0;
+}
+
+.slide--from--left{
+  animation-name: slideFromLeft;
+  animation-duration: 2s;
+  transition: transform 400ms;
+}
+
+.slide--from--right{
+  animation-name: slideFromRight;
+  animation-duration: 2s;
+  transition: transform 400ms;
+}
+
+.rotate--img{
+  animation-name: rotateAboutUsImg;
+  animation-duration: 2s;
+  transition: transform 400ms;
+  animation-delay:10ms;
+
+}
+
+@media only screen and (max-width:768px){
+  .about-us-container{
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .about-us-wrrapper{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .travel-counter-card-wrrapper{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .counter-card{
+    width: 80%;
+    margin: 1rem;
+  }
+}
+

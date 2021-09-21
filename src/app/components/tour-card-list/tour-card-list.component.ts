@@ -7,7 +7,11 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 })
 export class TourCardListComponent implements OnInit,AfterViewInit {
   private observer?:IntersectionObserver;
-  @ViewChild('test') test?:ElementRef;
+  @ViewChild('intersectingTourContainer') intersectingTourContainer?:ElementRef;
+  @ViewChild('firstDropAnimation') firstDropAnimation?:ElementRef;
+  @ViewChild('secondDropAnimation') secondDropAnimation?:ElementRef;
+  @ViewChild('thirdDropAnimation') thirdDropAnimation?:ElementRef;
+  @ViewChild('fourthDropAnimation') fourthDropAnimation?:ElementRef;
 
   constructor() { }
 
@@ -18,13 +22,19 @@ export class TourCardListComponent implements OnInit,AfterViewInit {
   ngAfterViewInit(){
     this.observer = new IntersectionObserver(entries =>{
       if(entries[0].isIntersecting){
-        console.log("presreo");
-        console.log(entries[0].target);
+          let firsAnimation = this.firstDropAnimation?.nativeElement as HTMLElement;
+          firsAnimation.classList.add("first--dropping--animation");
+          let secondAnimation = this.secondDropAnimation?.nativeElement as HTMLElement;
+          secondAnimation.classList.add("second--dropping--animation");
+          let thridAnimation = this.thirdDropAnimation?.nativeElement as HTMLElement;
+          thridAnimation.classList.add("third--dropping--animation");
+          let fourthAnimation = this.fourthDropAnimation?.nativeElement as HTMLElement;
+          fourthAnimation.classList.add('fourth--dropping--animation');
       }
     },{
-      threshold: 1
+      threshold:0.25
     });
-    this.observer.observe(this.test?.nativeElement as HTMLElement);
+    this.observer.observe(this.intersectingTourContainer?.nativeElement as HTMLElement);
 
   }
 

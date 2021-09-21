@@ -27,13 +27,54 @@ html,body{
   src: url("assets/fonts/PermanentMarker-Regular.ttf");
 }
 
-@keyframes expandNavbar {
+@keyframes droppingFromTop {
   from{
-    height: 0px;
+    transform: translateY(-1500px);
+    opacity: 0.5;
   }
 
   to{
-    height: auto;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes slideFromLeft {
+  from{
+    transform: translateX(-500px);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes slideFromRight {
+  from{
+    transform: translateX(500px);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes rotateAboutUsImg {
+  from{
+    transform: rotate(-100deg);
+    opacity: 0.5;
+  }
+  to{
+    transform: rotate(-3deg);
+    opacity:1;
+
   }
 
 }
