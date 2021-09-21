@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeVideoComponent } from './components/home-video/home-video.component';
 import { HomeComponent } from './pages/home/home.component';
+import { TourCardListComponent } from './components/tour-card-list/tour-card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeVideoComponent,
-    HomeComponent
+    HomeComponent,
+    TourCardListComponent
   ],
   imports: [
     BrowserModule,

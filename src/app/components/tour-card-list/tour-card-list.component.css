@@ -1,0 +1,147 @@
+.tour-card-list-container{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-map{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/tour-card/map.svg");
+  display: block;
+  background-repeat: no-repeat;
+
+}
+
+.icon-compass{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/tour-card/compass.svg");
+  display: block;
+  background-repeat: no-repeat;
+
+}
+
+.icon-backpack{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/tour-card/backpack.svg");
+  display: block;
+  background-repeat: no-repeat;
+
+}
+
+.icon-tent{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("~src/assets/icons/tour-card/tent.svg");
+  display: block;
+  background-repeat: no-repeat;
+
+
+}
+
+.tour-card-wrrapper{
+  position: relative;
+  width: 20%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--light-grey);
+  top: -40px;
+  padding-bottom: 1rem;
+}
+
+.icon-wrrapper{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.tour__card__heading{
+  font-weight: bold;
+}
+
+.tour__details{
+  padding: 1rem;
+  text-align: center;
+}
+
+.learn__more__btn{
+  position: relative;
+  display: flex;
+  font-family: "Monserrat";
+  font-size: 1rem;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.learn__more__btn:hover{
+  color: var(--green-darker);
+  border-bottom: 1px solid var(--green-darker);
+}
+
+.learn__more__btn:hover::after{
+  position: absolute;
+  content: url("~src/assets/icons/tour-card/right-arrow-green.svg");
+  width: 16px;
+  height: 16px;
+  right: 6px;
+  top: 1px;
+
+}
+
+.icon-right-arrow{
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: url("~src/assets/icons/tour-card/right-arrow.svg");
+  display: block;
+  margin-left: 10px;
+}
+
+.bg-yellow{
+  background-color: var(--main-yellow);
+}
+
+.bg-white{
+  background-color: white;
+}
+
+@media only screen and (max-width:768px){
+  .tour-card-list-container{
+    flex-direction: column;
+    height: 990px;
+  }
+
+  .tour-card-wrrapper{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height:250px;
+  }
+
+
+}
