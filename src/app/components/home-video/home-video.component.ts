@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home-video',
   templateUrl: './home-video.component.html',
   styleUrls: ['./home-video.component.css']
 })
-export class HomeVideoComponent implements OnInit {
+export class HomeVideoComponent implements OnInit,AfterViewInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  ngAfterViewInit(){
+
+
+
+  }
+
+
 
 }
