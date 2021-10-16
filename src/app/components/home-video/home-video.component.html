@@ -1,21 +1,18 @@
 <div class="video-container">
   <h6>it's Travel Time</h6>
   <h1>Explore new worlds with us</h1>
- <!--  <video #videoBg
-    poster="assets/video/poster.jpg"
-    autoplay="autoplay"
-    muted
+  <video
+    autoplay
     loop
+    onloadedmetadata="this.muted = true"
+    oncanplay="this.play()"
     playsinline
-    src="/assets/video/video1.mp4"
-  ></video> -->
-  <video #videoBg autoplay onloadedmetadata="this.muted = true" oncanplay="this.play()" playsinline>
-    <source src="/assets/video/video1.mp4" type="video/mp4">
-    <img src="assets/video/poster.jpg" alt="poster">
+  >
+    <source src="assets/video/video1.mp4" type="video/mp4" />
+    <img src="assets/video/poster.jpg" alt="poster" />
   </video>
   <div class="button-wrrapper">
     <button class="book__btn">Book now</button>
     <button class="discover__btn">Discover more</button>
-
   </div>
 </div>

@@ -8,6 +8,7 @@ import { HomeVideoComponent } from './components/home-video/home-video.component
 import { HomeComponent } from './pages/home/home.component';
 import { TourCardListComponent } from './components/tour-card-list/tour-card-list.component';
 import { AboutUsCardComponent } from './components/about-us-card/about-us-card.component';
+import { NewDestinationCardComponent } from './components/new-destination-card/new-destination-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutUsCardComponent } from './components/about-us-card/about-us-card.c
     HomeVideoComponent,
     HomeComponent,
     TourCardListComponent,
-    AboutUsCardComponent
+    AboutUsCardComponent,
+    NewDestinationCardComponent
   ],
   imports: [
     BrowserModule,
