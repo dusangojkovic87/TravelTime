@@ -1,0 +1,29 @@
+.popular-tours-list-container{
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: var(--light-grey-2);
+}
+
+.tours-heading-wrrapper{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tours-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  top: 200px;
+}
+
+app-popular-tour{
+  position: relative;
+  width: 30%;
+}

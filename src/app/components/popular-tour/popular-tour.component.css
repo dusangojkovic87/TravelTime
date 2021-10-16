@@ -1,0 +1,69 @@
+.popular-tour-container{
+  position: relative;
+  height: 500px;
+  border: 10px solid white;
+  border-radius: 5px;
+}
+
+.img-wrrapper{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.img-wrrapper img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tour-details{
+  position: relative;
+  width: 100%;
+  height:60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.tour__heading{
+  font-family: "Permanent Marker";
+  font-size: 1.2rem;
+}
+
+.tour__paragraph{
+  text-align: center;
+  padding: 1rem;
+}
+
+.book__tour__btn{
+  width: 150px;
+  height: 50px;
+  background-color: var(--main-orange);
+  font-family: "Monserrat";
+  font-size: 1rem;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom-tour-details{
+  position: relative;
+  top: 35px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li{
+  font-size: 0.7rem;
+  list-style: none;
+}
